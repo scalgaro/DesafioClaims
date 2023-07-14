@@ -35,6 +35,8 @@ Marca con una `x` las tareas que hayas completado:
 - [ ] Agregar un filtro en el GET de siniestros para filtrar por el número de siniestro.
 - [ ] No tenemos un método para eliminar siniestros. Agregar un endpoint DELETE para borrar un siniestro pasando el Id.
 - [ ] Actualmente el tipo de un siniestro se guarda como un string. Esto no nos sirve ya que los tipos son predefinidos por el sistema. Convertir la propiedad Tipo a un ENUM con los siguientes valores: `Robo`, `Incendio`, `Choque`.
+- [ ] Agregar una validación para que no se pueda crear un siniestro con una fecha mayor a la fecha actual.
+- [ ] Agregar una validación para que no se pueda crear un siniestro 
 
 ### Nivel 2
 
