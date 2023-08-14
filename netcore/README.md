@@ -32,12 +32,20 @@ Marca con una `x` las tareas que hayas completado:
 
 ### Nivel 1
 
-- [ ] Agregar un filtro en el GET de siniestros para filtrar por el número de siniestro.
+- [ ] Agregar un filtro en la acción GET de siniestros para filtrar por el número de siniestro.
+- [ ] Agregar un filtro en la acción GET de siniestros para filtrar por el estado del siniestro.
 - [ ] No tenemos un método para eliminar siniestros. Agregar un endpoint DELETE para borrar un siniestro pasando el Id.
 - [ ] Actualmente el tipo de un siniestro se guarda como un string. Esto no nos sirve ya que los tipos son predefinidos por el sistema. Convertir la propiedad Tipo a un ENUM con los siguientes valores: `Robo`, `Incendio`, `Choque`.
 - [ ] Agregar una validación para que no se pueda crear un siniestro con una fecha mayor a la fecha actual.
-- [ ] Agregar una validación para que no se pueda crear un siniestro 
+- [ ] Agregar una validación para que no se pueda crear un siniestro con un Tipo que no pertenezca al ENUM que creamos anteriormente.
 
 ### Nivel 2
 
+- [ ] Un siniestro puede tener varios terceros involucrados. Un tercero debe tener un nombre, apellido, DNI y un tipo de tercero. Los tipos de terceros son: `Conductor`, `Acompañante`, `Peatón`. Agregar la clase siniestro, la relación con Siniestro y la tabla correspondiente. 
+- [ ] Agregar un endpoint para crear un tercero asociado a un siniestro.
+- [ ] Agregar un endpoint para eliminar un tercero asociado a un siniestro.
+
+### Nivel 3
 - [ ] Implementar Soft Delete en la entidad Siniestro. De manera que al eliminar un siniestro, no se borre de la base de datos, sino que se marque como borrado. Adicionalmente, ya no debería aparecer en las consultas. Dentro de lo posible, este cambio debería ser transparente para los programadores que trabajan en esta aplicación.
+- [ ] Agregar un endpoint para obtener los siniestros borrados. De manera que podamos mostrar una papelera de reciclaje en la aplicación.
+- [ ] Agregar un endpoint para restaurar un siniestro borrado.
