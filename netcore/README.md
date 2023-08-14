@@ -47,5 +47,7 @@ Marca con una `x` las tareas que hayas completado:
 
 ### Nivel 3
 - [ ] Implementar Soft Delete en la entidad Siniestro. De manera que al eliminar un siniestro, no se borre de la base de datos, sino que se marque como borrado. Adicionalmente, ya no debería aparecer en las consultas. Dentro de lo posible, este cambio debería ser transparente para los programadores que trabajan en esta aplicación.
-- [ ] Agregar un endpoint para obtener los siniestros borrados. De manera que podamos mostrar una papelera de reciclaje en la aplicación.
+- [ ] Agregar un endpoint para obtener los siniestros borrados. De manera que podamos mostrar una papelera de reciclaje en la aplicación. O un filtro en el GET de siniestros, según te parezca conveniente.
 - [ ] Agregar un endpoint para restaurar un siniestro borrado.
+- [ ] Armar el Dockerfile para poder correr la aplicación en un contenedor de Docker. Exponer puertos para acceder mediante HTTP y HTTPS. Asegurarse de que las variables de entorno pisen la configuración del appsettings.json, para poder correr la imagen en distintos ambientes.
+
