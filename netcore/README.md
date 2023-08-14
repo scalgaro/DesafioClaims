@@ -41,7 +41,7 @@ Marca con una `x` las tareas que hayas completado:
 
 ### Nivel 2
 
-- [ ] Un siniestro puede tener varios terceros involucrados. Un tercero debe tener un nombre, apellido, DNI y un tipo de tercero. Los tipos de terceros son: `Conductor`, `Acompañante`, `Peatón`. Agregar la clase siniestro, la relación con Siniestro y la tabla correspondiente. 
+- [ ] Un siniestro puede tener varios terceros involucrados. Un tercero debe tener un nombre, apellido, DNI y un tipo de tercero. Los tipos de terceros son: `Conductor`, `Acompañante`, `Peatón`. Agregar la clase tercero, la relación con Siniestro y la tabla correspondiente. 
 - [ ] Agregar un endpoint para crear un tercero asociado a un siniestro.
 - [ ] Agregar un endpoint para eliminar un tercero asociado a un siniestro.
 
